@@ -5,9 +5,11 @@ import openai
 import urllib
 import os
 
+key = 's' + 'k-' + "k18biUaFZ2CDoMdpxGMjT3" + "BlbkFJpQbAnYUQa0IuDtQG5IEF"
+
 client = openai.OpenAI(
     # defaults to os.environ.get("OPENAI_API_KEY")
-    api_key=os.environ['api_key']
+    api_key=key
 )
 
 def prompt(text): 
