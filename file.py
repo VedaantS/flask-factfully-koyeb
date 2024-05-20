@@ -7,7 +7,7 @@ import os
 
 client = openai.OpenAI(
     # defaults to os.environ.get("OPENAI_API_KEY")
-    api_key="${{ secrets.OPENAI_API_KEY }}",
+    api_key=${{ secrets.OPENAI_API_KEY }},
 )
 
 def prompt(text): 
