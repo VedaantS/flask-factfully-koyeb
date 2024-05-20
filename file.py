@@ -5,7 +5,6 @@ import openai
 import urllib
 import os
 
-key = ord() + ord() + "-" + 
 client = openai.OpenAI(
     # defaults to os.environ.get("OPENAI_API_KEY")
     api_key="${{ secrets.OPENAI_API_KEY }}",
